@@ -44,7 +44,7 @@ export interface paths {
             };
             requestBody: {
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["CreateBoard"];
                 };
             };
             responses: {
@@ -115,6 +115,9 @@ export interface components {
         Error: {
             message: string;
             code: string;
+        };
+        CreateBoard: {
+            name: string;
         };
     };
     responses: {

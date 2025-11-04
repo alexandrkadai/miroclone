@@ -38,7 +38,7 @@ createBoard:
     content:
       application/json:
         schema:
-        $ref: '#/schemas/CreateBoard'
+          $ref: '#/schemas/CreateBoard'
 
   responses:
     '201':
