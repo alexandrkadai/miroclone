@@ -6,7 +6,7 @@ export function App() {
   const location = useLocation();
   const isAuthPage = location.pathname === ROUTES.LOGIN || location.pathname === ROUTES.REGISTER;
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-sky-200 w-full h-screen'>
       {!isAuthPage && <AppHeader />}
       <Outlet />
     </div>
